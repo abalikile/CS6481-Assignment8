@@ -19,17 +19,17 @@ var employees = [
     title = $("title").value;
     extension = $("extension").value;
 
-    if(name === ""){
+    if(name === "" || name === " "){
      $("name_error").innerHTML = required;
         header = msg;
     }
     
-    if(title === ""){
+    if(title === "" || title === " "){
        $("title_error").innerHTML = required;
        header = msg;
     }
    
-    if(extension === ""){
+    if(extension === "" || extension === " "){
        $("extension_error").innerHTML = required;
        header = msg;
     }
